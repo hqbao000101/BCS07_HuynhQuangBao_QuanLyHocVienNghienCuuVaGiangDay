@@ -11,4 +11,21 @@ function formatSalary(salary) {
   return `${number.join("")} đ`;
 }
 
-export { formatSalary };
+// todo: local storage
+function saveLocal(person) {
+  localStorage.setItem("Person", JSON.stringify(person));
+}
+
+function getLocal() {
+  let localPerson = JSON.parse(localStorage.getItem("Person"));
+  if (localPerson != null) {
+    person = localPerson;
+  }
+}
+
+function clearLocal() {
+  localStorage.removeItem("Person");
+}
+
+// todo: export all
+export { formatSalary, saveLocal, getLocal, clearLocal };
