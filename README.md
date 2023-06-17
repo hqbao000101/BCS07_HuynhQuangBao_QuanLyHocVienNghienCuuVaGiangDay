@@ -1,4 +1,4 @@
-# BCS07_HuynhQuangBao_QuanLyHocVienNghienCuuVaGiangDay
+# Brief Description
 This is an exercice for practicing the ES6 as well as OOP
 
 1. Project Name: Management of research & teaching institute
