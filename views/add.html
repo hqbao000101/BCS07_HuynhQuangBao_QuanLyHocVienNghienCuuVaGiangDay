@@ -3,10 +3,10 @@
   <head>
     <link
       rel="shortcut icon"
-      href="./assets/img/favicon.png"
+      href="../assets/img/favicon.png"
       type="image/x-icon"
     />
-    <title>Home</title>
+    <title>Register Person</title>
     <!-- ! Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -40,14 +40,14 @@
     />
 
     <!-- ! CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body class="d-flex flex-wrap container">
     <!-- ! sidebar -->
     <section id="sidebar" class="bg-black p-5 text-white">
       <div class="sidebar__title d-flex flex-wrap justify-content-between">
         <img
-          src="./assets/img/favicon.png"
+          src="../assets/img/favicon.png"
           alt="logo"
           class="img-fluid w-25 h-25"
         />
@@ -56,74 +56,32 @@
       <div class="sidebar__tabs">
         <nav>
           <ul>
-            <li><a href="#" class="active">List</a></li>
-            <li><a href="./views/add.html">Add</a></li>
-            <li><a href="./views/update.html">Update</a></li>
+            <li><a href="../index.html">List</a></li>
+            <li><a href="#" class="active">Add</a></li>
+            <li><a href="./update.html">Update</a></li>
           </ul>
         </nav>
       </div>
     </section>
 
     <!-- ! main content -->
-    <section id="main" class="p-5">
+    <section id="add_main" class="p-5">
       <!-- todo: top -->
       <div class="main__top">
         <!-- todo: title -->
         <div class="main__title">
-          <h2>Person</h2>
+          <h2>Add New Users</h2>
         </div>
-        <!-- todo: search & filter -->
-        <div class="main__filter">
-          <div class="input-group mb-3">
-            <span class="input-group-text" id="basic-addon1">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </span>
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Username"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
-            />
-          </div>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-
-        <!-- todo: table -->
-        <div class="main__table table-responsive">
-          <table class="table table-primary">
-            <thead>
-              <tr>
-                <th scope="col">Column 1</th>
-                <th
-                  scope="col"
-                  class="d-flex flex-wrap justify-content-between"
-                >
-                  Column 2
-                  <i class="fa-solid fa-arrow-up-z-a"></i>
-                  <i class="fa-solid fa-arrow-down-z-a"></i>
-                </th>
-                <th scope="col">Column 3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="">
-                <td scope="row">R1C1</td>
-                <td>R1C2</td>
-                <td>R1C3</td>
-              </tr>
-              <tr class="">
-                <td scope="row">Item</td>
-                <td>Item</td>
-                <td>Item</td>
-              </tr>
-            </tbody>
-          </table>
+        <!-- todo: add - form -->
+        <div class="mb-3">
+          <label for="" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            name=""
+            id=""
+            placeholder=""
+          />
         </div>
       </div>
       <!-- todo: footer -->
