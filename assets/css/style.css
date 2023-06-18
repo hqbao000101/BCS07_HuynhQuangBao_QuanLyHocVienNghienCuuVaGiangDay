@@ -7,4 +7,143 @@
 
 body {
   font-family: "Sarabun", sans-serif;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent;
+}
+
+#sidebar {
+  min-height: 100vh;
+  width: 30%;
+  box-shadow: 3px 0 5px gray;
+  background-color: rgb(15, 14, 14);
+  padding: 30px 15px !important;
+}
+#sidebar .sidebar__title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#sidebar .sidebar__title img {
+  max-width: 3vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1vw !important;
+}
+#sidebar .sidebar__title h1 {
+  font-size: 1.3vw;
+  text-transform: uppercase;
+}
+#sidebar hr {
+  margin: 20px 0 30px !important;
+}
+#sidebar .sidebar__tabs nav ul li {
+  list-style-type: none;
+  padding: 20px 20px 0 0 !important;
+}
+#sidebar .sidebar__tabs nav ul li a {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 20px !important;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+#sidebar .sidebar__tabs nav ul li a i {
+  color: white;
+  margin-right: 20px !important;
+  transition: all 0.5s;
+}
+#sidebar .sidebar__tabs nav ul li a span {
+  font-size: 20px;
+  color: white;
+  transition: all 0.5s;
+}
+#sidebar .sidebar__tabs nav ul li a:hover {
+  background-color: #b8e994;
+}
+#sidebar .sidebar__tabs nav ul li a:hover i {
+  color: black;
+}
+#sidebar .sidebar__tabs nav ul li a:hover span {
+  color: black;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 70%;
+  overflow: hidden;
+}
+#main .main__top {
+  padding: 40px 50px !important;
+  width: 100%;
+}
+#main .main__top .main__title h2 {
+  font-size: 30px;
+  margin-bottom: 50px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#main .main__top .main__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px !important;
+}
+#main .main__top .main__filter .input-group {
+  flex: 1;
+  margin-right: 20px !important;
+}
+#main .main__top .main__filter .input-group span {
+  padding: 10px 20px !important;
+  background-color: black;
+}
+#main .main__top .main__filter .input-group span i {
+  color: white;
+}
+#main .main__top .main__filter .input-group input {
+  padding: 10px !important;
+  border-radius: 0;
+  transition: all 0.5s;
+  border: none;
+  border-bottom: 2px solid black;
+}
+#main .main__top .main__filter .input-group input:focus {
+  box-shadow: none;
+  border-color: blue;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+#main .main__top .main__filter select {
+  width: 20%;
+  padding: 10px !important;
+}
+#main .main__top .main__table thead th {
+  background-color: #0984e3;
+  color: white;
+  padding: 10px 5px !important;
+}
+#main .main__top .main__table tbody tr td {
+  padding: 20px 5px !important;
+}
+#main .main__top .main__table tbody tr td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#main .main__top .main__table tbody tr td:last-child button {
+  padding: 5px 10px !important;
+}
+#main .main__top .main__table tbody tr td:last-child button i {
+  color: white;
+}
+#main .main__top .main__table tbody tr td:last-child button:first-child {
+  margin-right: 10px !important;
+}
+#main .main__top .main__table tbody tr:nth-child(even) {
+  background-color: #dfe6e9 !important;
 }/*# sourceMappingURL=style.css.map */

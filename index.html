@@ -42,30 +42,41 @@
     <!-- ! CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="d-flex flex-wrap container">
+  <body class="d-flex container">
     <!-- ! sidebar -->
-    <section id="sidebar" class="bg-black p-5 text-white">
-      <div class="sidebar__title d-flex flex-wrap justify-content-between">
-        <img
-          src="./assets/img/favicon.png"
-          alt="logo"
-          class="img-fluid w-25 h-25"
-        />
+    <section id="sidebar" class="text-white">
+      <div class="sidebar__title">
+        <img src="./assets/img/favicon.png" alt="logo" />
         <h1>Institute Management</h1>
       </div>
+      <hr />
       <div class="sidebar__tabs">
         <nav>
           <ul>
-            <li><a href="#" class="active">List</a></li>
-            <li><a href="./views/add.html">Add</a></li>
-            <li><a href="./views/update.html">Update</a></li>
+            <li>
+              <a href="#" class="active"
+                ><i class="fa-solid fa-list"></i> <span>List All Users</span></a
+              >
+            </li>
+            <li>
+              <a href="./views/add.html"
+                ><i class="fa-solid fa-user-plus"></i
+                ><span>Add New Users</span></a
+              >
+            </li>
+            <li>
+              <a href="./views/update.html"
+                ><i class="fa-solid fa-file-pen"></i
+                ><span>Update Users Info</span></a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </section>
 
     <!-- ! main content -->
-    <section id="main" class="p-5">
+    <section id="main">
       <!-- todo: top -->
       <div class="main__top">
         <!-- todo: title -->
@@ -74,7 +85,7 @@
         </div>
         <!-- todo: search & filter -->
         <div class="main__filter">
-          <div class="input-group mb-3">
+          <div class="input-group">
             <span class="input-group-text" id="basic-addon1">
               <i class="fa-solid fa-magnifying-glass"></i>
             </span>
@@ -87,10 +98,10 @@
             />
           </div>
           <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
+            <option selected>Type</option>
+            <option value="1">Student</option>
+            <option value="2">Employee</option>
+            <option value="3">Customer</option>
           </select>
         </div>
 
@@ -99,37 +110,79 @@
           <table class="table table-primary">
             <thead>
               <tr>
-                <th scope="col">Column 1</th>
-                <th
-                  scope="col"
-                  class="d-flex flex-wrap justify-content-between"
-                >
-                  Column 2
-                  <i class="fa-solid fa-arrow-up-z-a"></i>
-                  <i class="fa-solid fa-arrow-down-z-a"></i>
+                <th scope="col">ID</th>
+                <th scope="col">
+                  Name
+                  <i class="fa-solid fa-arrow-up-z-a d-none"></i>
+                  <i class="fa-solid fa-arrow-down-z-a d-none"></i>
                 </th>
-                <th scope="col">Column 3</th>
+                <th scope="col">Type</th>
+                <th scope="col">Address</th>
+                <th scope="col">Email</th>
+                <th scope="col">Score</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Company</th>
+                <th scope="col">Actions</th>
               </tr>
             </thead>
             <tbody>
-              <tr class="">
-                <td scope="row">R1C1</td>
-                <td>R1C2</td>
-                <td>R1C3</td>
+              <tr>
+                <td scope="col">001</td>
+                <td scope="col">Nguyen Van A</td>
+                <td scope="col">Employee</td>
+                <td scope="col">20/8 Thanh Thai</td>
+                <td scope="col">a12@gmail.com</td>
+                <td scope="col"></td>
+                <td scope="col">12.000.000 d</td>
+                <td scope="col"></td>
+                <td scope="col">
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </td>
               </tr>
-              <tr class="">
-                <td scope="row">Item</td>
-                <td>Item</td>
-                <td>Item</td>
+              <tr>
+                <td scope="col">001</td>
+                <td scope="col">Nguyen Van A</td>
+                <td scope="col">Employee</td>
+                <td scope="col">20/8 Thanh Thai</td>
+                <td scope="col">a12@gmail.com</td>
+                <td scope="col"></td>
+                <td scope="col">12.000.000 d</td>
+                <td scope="col"></td>
+                <td scope="col">
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td scope="col">001</td>
+                <td scope="col">Nguyen Van A</td>
+                <td scope="col">Employee</td>
+                <td scope="col">20/8 Thanh Thai</td>
+                <td scope="col">a12@gmail.com</td>
+                <td scope="col"></td>
+                <td scope="col">12.000.000 d</td>
+                <td scope="col"></td>
+                <td scope="col">
+                  <button class="btn btn-warning">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </button>
+                  <button class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                  </button>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
-      </div>
-      <!-- todo: footer -->
-      <div class="main__footer d-flex flex-wrap justify-content-between">
-        <h6>Study & Research</h6>
-        <p>&copy; Copyright 2023, All Rights Reserved.</p>
       </div>
     </section>
 
