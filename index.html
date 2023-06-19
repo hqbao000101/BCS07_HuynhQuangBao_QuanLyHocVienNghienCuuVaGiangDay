@@ -42,7 +42,7 @@
     <!-- ! CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body class="d-flex container">
+  <body class="d-flex">
     <!-- ! sidebar -->
     <section id="sidebar" class="text-white">
       <div class="sidebar__title">
@@ -107,7 +107,7 @@
 
         <!-- todo: table -->
         <div class="main__table table-responsive">
-          <table class="table table-primary">
+          <table class="table table-primary text-center">
             <thead>
               <tr>
                 <th scope="col">ID</th>
@@ -125,7 +125,29 @@
                 <th scope="col">Actions</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody id="person-list">
+              <tr>
+                <td scope="col">001</td>
+                <td scope="col">Nguyen Van A</td>
+                <td scope="col">Employee</td>
+                <td scope="col">20/8 Thanh Thai</td>
+                <td scope="col">a12@gmail.com</td>
+                <td scope="col"></td>
+                <td scope="col">12.000.000 d</td>
+                <td scope="col"></td>
+                <td scope="col">
+                  <a href="./views/update.html">
+                    <button class="btn btn-warning" onclick="editPerson()">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </button>
+                  </a> 
+                  <a href="#">
+                    <button class="btn btn-danger" onclick="deletePerson()">
+                      <i class="fa-solid fa-trash"></i>
+                    </button>
+                  </a> 
+                </td>
+              </tr>
               <tr>
                 <td scope="col">001</td>
                 <td scope="col">Nguyen Van A</td>

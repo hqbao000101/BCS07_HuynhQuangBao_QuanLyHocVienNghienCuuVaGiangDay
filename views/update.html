@@ -42,52 +42,207 @@
     <!-- ! CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-  <body class="d-flex flex-wrap container">
+  <body class="d-flex">
     <!-- ! sidebar -->
-    <section id="sidebar" class="bg-black p-5 text-white">
-      <div class="sidebar__title d-flex flex-wrap justify-content-between">
-        <img
-          src="../assets/img/favicon.png"
-          alt="logo"
-          class="img-fluid w-25 h-25"
-        />
+    <section id="sidebar" class="text-white">
+      <div class="sidebar__title">
+        <img src="../assets/img/favicon.png" alt="logo" />
         <h1>Institute Management</h1>
       </div>
+      <hr />
       <div class="sidebar__tabs">
         <nav>
           <ul>
-            <li><a href="../index.html">List</a></li>
-            <li><a href="./add.html">Add</a></li>
-            <li><a href="#" class="active">Update</a></li>
+            <li>
+              <a href="../index.html"
+                ><i class="fa-solid fa-list"></i> <span>List All Users</span></a
+              >
+            </li>
+            <li>
+              <a href="./add.html"
+                ><i class="fa-solid fa-user-plus"></i
+                ><span>Add New Users</span></a
+              >
+            </li>
+            <li>
+              <a href="#" class="active"
+                ><i class="fa-solid fa-file-pen"></i
+                ><span>Update Users Info</span></a
+              >
+            </li>
           </ul>
         </nav>
       </div>
     </section>
 
     <!-- ! main content -->
-    <section id="update_main" class="p-5">
+    <section id="add_main" class="p-5">
       <!-- todo: top -->
       <div class="main__top">
         <!-- todo: title -->
         <div class="main__title">
-          <h2>Update Users</h2>
+          <h2>Update Information</h2>
         </div>
-        <!-- todo: update-form -->
-        <div class="mb-3">
-          <label for="" class="form-label">Name</label>
-          <input
-            type="text"
-            class="form-control"
-            name=""
-            id=""
-            placeholder=""
-          />
+        <!-- todo: add - form -->
+        <div class="container">
+          <div class="main__form">
+            <!-- ! base - information -->
+            <div class="row mb-3">
+              <!-- todo: item 1 -->
+              <div class="mb-5 col-6 pe-5">
+                <label for="personID" class="form-label">ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="personID"
+                  placeholder=""
+                />
+              </div>
+              <!-- todo: item 2 -->
+              <div class="mb-5 col-6 pe-5">
+                <label for="personName" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="personName"
+                  placeholder=""
+                />
+              </div>
+              <!-- todo: item 3 -->
+              <div class="mb-5 col-6 pe-5">
+                <label for="personAddress" class="form-label">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="personAddress"
+                  placeholder=""
+                />
+              </div>
+              <!-- todo: item 4 -->
+              <div class="mb-5 col-6 pe-5">
+                <label for="personEmail" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  name=""
+                  id="personEmail"
+                  placeholder=""
+                />
+              </div>
+            </div>
+            <!-- ! additional info  -->
+            <div id="form_change">
+              <!-- ! Student -->
+              <div class="row mb-3">
+                <!-- todo: item 1 -->
+                <div class="mb-5 col-4 pe-5">
+                  <label for="personMath" class="form-label">Math</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personMath"
+                    placeholder=""
+                  />
+                </div>
+                <!-- todo: item 2 -->
+                <div class="mb-5 col-4 pe-5">
+                  <label for="personPhysics" class="form-label">Physics</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personPhysics"
+                    placeholder=""
+                  />
+                </div>
+                <!-- todo: item 3 -->
+                <div class="mb-5 col-4 pe-5">
+                  <label for="personChemistry" class="form-label"
+                    >Chemistry</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personChemistry"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <!-- ! Employee -->
+              <div class="row mb-3">
+                <!-- todo: item 1 -->
+                <div class="mb-5 col-6 pe-5">
+                  <label for="personDay" class="form-label">Worked Day</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personDay"
+                    placeholder=""
+                  />
+                </div>
+                <!-- todo: item 2 -->
+                <div class="mb-5 col-6 pe-5">
+                  <label for="personSalary" class="form-label"
+                    >Salary / Day</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personSalary"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+              <!-- ! Customer -->
+              <div class="row mb-3">
+                <!-- todo: item 1 -->
+                <div class="mb-5 col-6 pe-5">
+                  <label for="personCompany" class="form-label"
+                    >Company Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personCompany"
+                    placeholder=""
+                  />
+                </div>
+                <!-- todo: item 2 -->
+                <div class="mb-5 col-6 pe-5">
+                  <label for="personBill" class="form-label">Bill</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personBill"
+                    placeholder=""
+                  />
+                </div>
+                <!-- todo: item 3 -->
+                <div class="mb-5 col-12 pe-5">
+                  <label for="personRating" class="form-label">Rating</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name=""
+                    id="personRating"
+                    placeholder=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- ! button -->
+            <button class="btn btn-success text-white px-5 py-3">Confirm</button>
+          </div>
         </div>
-      </div>
-      <!-- todo: footer -->
-      <div class="main__footer d-flex flex-wrap justify-content-between">
-        <h6>Study & Research</h6>
-        <p>&copy; Copyright 2023, All Rights Reserved.</p>
       </div>
     </section>
 

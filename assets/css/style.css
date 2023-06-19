@@ -15,7 +15,7 @@ body {
 
 #sidebar {
   min-height: 100vh;
-  width: 30%;
+  width: 20%;
   box-shadow: 3px 0 5px gray;
   background-color: rgb(15, 14, 14);
   padding: 30px 15px !important;
@@ -68,6 +68,15 @@ body {
   color: black;
 }
 #sidebar .sidebar__tabs nav ul li a:hover span {
+  color: black;
+}
+#sidebar .sidebar__tabs nav ul li a.active {
+  background-color: #b8e994;
+}
+#sidebar .sidebar__tabs nav ul li a.active i {
+  color: black;
+}
+#sidebar .sidebar__tabs nav ul li a.active span {
   color: black;
 }
 
@@ -146,4 +155,50 @@ body {
 }
 #main .main__top .main__table tbody tr:nth-child(even) {
   background-color: #dfe6e9 !important;
+}
+
+#add_main {
+  width: 70%;
+}
+#add_main .main__top .main__title h2 {
+  font-size: 30px;
+  margin-bottom: 30px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#add_main .main__top .main__form label {
+  font-weight: 600;
+  border-bottom: 5px solid green;
+  padding: 10px 30px !important;
+  background-color: black;
+  color: white;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+}
+#add_main .main__top .main__form input {
+  padding: 15px 0 !important;
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid black;
+  transition: all 0.5s;
+}
+#add_main .main__top .main__form input:focus {
+  box-shadow: none;
+  border-bottom: 3px solid red;
+}
+#add_main .main__top select {
+  background-color: black;
+  color: white;
+  border-left: 5px solid green;
+}
+#add_main .main__top select option {
+  padding: 10px 0 !important;
+}
+#add_main .main__top button {
+  transition: all 0.5s;
+}
+#add_main .main__top button:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }/*# sourceMappingURL=style.css.map */
